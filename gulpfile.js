@@ -65,7 +65,10 @@ function jekyll(done) {
 function server(done) {
   browserSync({
     server: {
-      baseDir: '_site'
+      startPath: "/portfolio",
+      routes: {
+          '/portfolio': '_site'
+      }
     }
   });
   done();
