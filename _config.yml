@@ -1,15 +1,12 @@
 # Site Settings
-name: Portfolio
+name: Kirill Markin | Portfolio
 title: Kirill Markin | Portfolio
 description: Kirill Markin\'s Portfolio
 tags:
-  - portfolio
-  - kirill
-  - markin
-  - c++
-  - dx12
-  - ue5
-  - unreal engine
+  - C++
+  - DirectX 12
+  - Unreal Engine
+  - Gamedev
 show_hero: true
 menu:
   - title: Home
@@ -30,12 +27,12 @@ formspree_form_id:
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: kmarkindev
-facebook_username:
-twitter_username:
-instagram_username:
-linkedin_username: kmarkindev
-medium_username:
+github_username: github_username
+facebook_username: facebook_username
+twitter_username: twitter_username
+instagram_username: instagram_username
+linkedin_username: linkedin_username
+medium_username: medium_username
 
 
 # Posts Settings
@@ -46,8 +43,8 @@ two_columns_layout: true
 
 
 # Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+url: "https://kmarkindev.github.io" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category
