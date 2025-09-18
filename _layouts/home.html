@@ -40,6 +40,40 @@ layout: main
             </div>
         </section>
     {% endif %}
+
+    {% if site.show_author_preview %}
+    <!-- Author Preview -->
+    <section class="author_preview">
+        <div class="pixels"></div>
+        <div class="gradient"></div>
+        <div class="content">
+            <h1 class="title">Kirill Markin</h1>
+            <p class="description">This is my GameDev Portfolio</p>
+            <section class="contacts">
+                <div class="details">
+                    <p>
+                        {% if site.github_link %}
+                        <a href="{{ site.github_link }}" title="Github">
+                            <svg><use xlink:href="#icon-github"></use></svg>
+                        </a>
+                        {% endif %}
+                        {% if site.linkedin_link %}
+                        <a href="{{ site.linkedin_link }}" title="LinkedIn">
+                            <svg><use xlink:href="#icon-linkedin"></use></svg>
+                        </a>
+                        {% endif %}
+                        {% if site.telegram_link %}
+                        <a href="{{ site.telegram_link }}" title="Telegram">
+                            <svg><use xlink:href="#icon-linkedin"></use></svg>
+                        </a>
+                        {% endif %}
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+    {% endif %}
+
     <!-- Posts -->
     <section id="grid" class="row flex-grid">
         {% for post in posts offset: offset %}

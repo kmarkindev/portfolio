@@ -6,16 +6,17 @@ tags:
   - DirectX 12
   - Unreal Engine
   - Gamedev
-show_hero: true
+show_hero: false
+show_author_preview: true
 menu:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
+#  - title: Home
+#    url: /
+#  - title: About
+#    url: /about
+#  - title: Contact
+#    url: /contact
+#  - title: Feed
+#    url: /feed.xml
 email: kmarkindev@gmail.com
 # See: https://disqus.com/
 disqus_username:

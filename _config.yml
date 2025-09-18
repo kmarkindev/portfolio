@@ -7,16 +7,17 @@ tags:
   - DirectX 12
   - Unreal Engine
   - Gamedev
-show_hero: true
+show_hero: false
+show_author_preview: true
 menu:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
+#  - title: Home
+#    url: /
+#  - title: About
+#    url: /about
+#  - title: Contact
+#    url: /contact
+#  - title: Feed
+#    url: /feed.xml
 email: kmarkindev@gmail.com
 # See: https://disqus.com/
 disqus_username:
@@ -27,19 +28,23 @@ formspree_form_id:
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+#github_username: github_username
+#facebook_username: facebook_username
+#twitter_username: twitter_username
+#instagram_username: instagram_username
+#linkedin_username: linkedin_username
+#medium_username: medium_username
+
+telegram_link: https://t.me/kmarkindev
+linkedin_link: https://linkedin.com/in/kmarkindev
+github_link: https://github.com/kmarkindev
 
 
 # Posts Settings
-show_time_bar: true
+show_time_bar: false
 show_modal_on_exit: false
-show_modal_on_finish_post: true
-two_columns_layout: true
+show_modal_on_finish_post: false
+two_columns_layout: false
 
 
 # Advanced Settings
@@ -64,7 +69,7 @@ use_logo: false
 
 # Content paginator
 paginate_content:
-  enabled: true
+  enabled: false
   debug: false
   collections:
     - posts
