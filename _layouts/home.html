@@ -80,6 +80,9 @@ layout: main
     <!-- Posts -->
     <section id="grid" class="row flex-grid">
         {% for post in posts offset: offset %}
+
+            {% if post.hidden == false or post.hidden == none %}
+
             <article class="box-item">
                 {% if site.show_post_category %}
                 <span class="category">
@@ -134,6 +137,9 @@ layout: main
                     </div>
                 </div>
             </article>
+
+            {% endif %}
+
         {% endfor %}
     </section>
     <!-- Pagination -->

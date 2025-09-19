@@ -56,12 +56,16 @@
 
   &:hover {
     z-index: 2;
-    transform: scale(1.1);
+    transform: scale(1.0);
 
     img {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      transform: scale(1.05);
+      //-webkit-filter: grayscale(100%);
+      //filter: grayscale(100%);
+      transform: scale(1.00);
+    }
+
+    .post-title {
+        color: $accentDark;
     }
 
     .box-body {
@@ -120,7 +124,7 @@
       margin: rem(10px) 0;
       font-size: rem(24px);
       @include mainFont(800);
-      color: $accentDark;
+      color: #bfbfbf;
       line-height: rem(30px);
     }
 
