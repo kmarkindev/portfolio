@@ -52,22 +52,28 @@ layout: main
             <section class="contacts">
                 <div class="details">
                     <p>
-                        {% if site.github_link %}
+                        {% if site.github_username %}
                         <a href="https://github.com/{{ site.github_username }}" title="Github">
                             <svg><use xlink:href="#icon-github"></use></svg>
                             <span>{{ site.github_username }}</span>
                         </a>
                         {% endif %}
-                        {% if site.linkedin_link %}
+                        {% if site.linkedin_username %}
                         <a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
                             <svg><use xlink:href="#icon-linkedin"></use></svg>
                             <span>{{ site.linkedin_username }}</span>
                         </a>
                         {% endif %}
-                        {% if site.telegram_link %}
+                        {% if site.telegram_username %}
                         <a href="https://t.me/{{ site.telegram_username }}" title="Telegram">
                             <svg><use xlink:href="#icon-telegram"></use></svg>
                             <span>{{ site.telegram_username }}</span>
+                        </a>
+                        {% endif %}
+                        {% if site.resume_link %}
+                        <a href="{{ site.resume_link }}" title="Telegram">
+                            <svg style="padding-top: 3px; margin-left: -2px;"><use xlink:href="#icon-resume"></use></svg>
+                            <span style="margin-right: -2px">resume</span>
                         </a>
                         {% endif %}
                     </p>
