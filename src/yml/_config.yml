@@ -27,6 +27,7 @@ show_footer: false
 show_share: false
 show_post_info: false
 show_post_category: false
+show_post_author: false
 
 # Content paginator
 paginate_content:
