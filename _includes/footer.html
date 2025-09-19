@@ -1,3 +1,5 @@
+{% if site.show_footer %}
+
 <footer>
     <p>
       {% if site.github_username %}
@@ -38,6 +40,12 @@
       <span>Jekflix</span> was made with <svg class="love"><use xlink:href="#icon-heart"></use></svg> by <a href="https://rossener.com" target="_blank" class="creator">Thiago Rossener</a>
     </p>
 </footer>
+
+${% else %}
+
+<div style="height: 50px"></div>
+
+{% endif %}
 
 {% assign social_urls = '' %}
 {% if site.github_username %}

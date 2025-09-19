@@ -65,8 +65,14 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
+show_get_theme_btn: false
 use_logo: false
+
+# My new settings
+show_footer: false
+show_share: false
+show_post_info: false
+show_post_category: false
 
 # Content paginator
 paginate_content:
