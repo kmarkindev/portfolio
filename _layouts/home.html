@@ -53,25 +53,25 @@ layout: main
                 <div class="details">
                     <p>
                         {% if site.github_username %}
-                        <a href="https://github.com/{{ site.github_username }}" title="Github">
+                        <a href="https://github.com/{{ site.github_username }}" target="_blank" title="Github">
                             <svg><use xlink:href="#icon-github"></use></svg>
                             <span>{{ site.github_username }}</span>
                         </a>
                         {% endif %}
                         {% if site.linkedin_username %}
-                        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
+                        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn">
                             <svg><use xlink:href="#icon-linkedin"></use></svg>
                             <span>{{ site.linkedin_username }}</span>
                         </a>
                         {% endif %}
                         {% if site.telegram_username %}
-                        <a href="https://t.me/{{ site.telegram_username }}" title="Telegram">
+                        <a href="https://t.me/{{ site.telegram_username }}" target="_blank" title="Telegram">
                             <svg><use xlink:href="#icon-telegram"></use></svg>
                             <span>{{ site.telegram_username }}</span>
                         </a>
                         {% endif %}
                         {% if site.resume_link %}
-                        <a href="{{ site.resume_link }}" title="Telegram">
+                        <a href="{{ site.resume_link }}" target="_blank" title="Telegram">
                             <svg style="padding-top: 3px; margin-left: -2px;"><use xlink:href="#icon-resume"></use></svg>
                             <span style="margin-right: -2px">resume</span>
                         </a>
@@ -98,7 +98,7 @@ layout: main
                 </span>
                 {% endif %}
                 <div class="box-body">
-                    <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
+                    <a class="cover" href="{{ post.url | prepend: site.baseurl }}" target="_blank">
                         {% include loader.html %}
                         {% if post.optimized_image %}
                             <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
@@ -125,12 +125,12 @@ layout: main
                             {% include date.html date=post.date %}
                         </time>
                         {% endif %}
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">
                             <h2 class="post-title">
                                 {{ post.title }}
                             </h2>
                         </a>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">
                             <p class="description">{{ post.description }}</p>
                         </a>
                         <div class="tags">
