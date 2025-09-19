@@ -87,7 +87,7 @@
       transition: all 0.1s;
       color: #bfbfbf;
 
-      margin: 0 5px;
+      margin: 0 7px;
 
       vertical-align: middle;
       display: inline-block;
@@ -98,9 +98,11 @@
       }
 
       span {
+        font-size: 14pt;
         vertical-align: middle;
         display: inline-block;
         height: 30px;
+        margin-bottom: 5px;
       }
     }
 
