@@ -48,23 +48,26 @@ layout: main
         <div class="gradient"></div>
         <div class="content">
             <h1 class="title">Kirill Markin</h1>
-            <p class="description">This is my GameDev Portfolio</p>
+            <p class="description">Portfolio</p>
             <section class="contacts">
                 <div class="details">
                     <p>
                         {% if site.github_link %}
-                        <a href="{{ site.github_link }}" title="Github">
+                        <a href="https://github.com/{{ site.github_username }}" title="Github">
                             <svg><use xlink:href="#icon-github"></use></svg>
+                            <span>{{ site.github_username }}</span>
                         </a>
                         {% endif %}
                         {% if site.linkedin_link %}
-                        <a href="{{ site.linkedin_link }}" title="LinkedIn">
+                        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
                             <svg><use xlink:href="#icon-linkedin"></use></svg>
+                            <span>{{ site.linkedin_username }}</span>
                         </a>
                         {% endif %}
                         {% if site.telegram_link %}
-                        <a href="{{ site.telegram_link }}" title="Telegram">
+                        <a href="https://t.me/{{ site.telegram_username }}" title="Telegram">
                             <svg><use xlink:href="#icon-linkedin"></use></svg>
+                            <span>{{ site.telegram_username }}</span>
                         </a>
                         {% endif %}
                     </p>
