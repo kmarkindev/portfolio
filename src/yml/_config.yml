@@ -29,6 +29,10 @@ show_post_info: false
 show_post_category: false
 show_post_author: false
 
+# My Analytics
+umami_guid: "78a1f8ce-561b-4698-a1c8-04b6ccd57777"
+umami_script: "https://cloud.umami.is/script.js"
+
 # Content paginator
 paginate_content:
   enabled: false
