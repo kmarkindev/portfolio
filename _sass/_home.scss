@@ -32,7 +32,7 @@
   margin: 0 0 rem(30px);
   display: inline-block;
   min-height: rem(285px);
-  transition: all 0.3s;
+  transition: all 0.1s;
   position: relative;
   z-index: 1;
 
@@ -66,9 +66,12 @@
 
     .post-title {
         color: $accentDark;
+        transition: all 0.1s;
     }
 
     .box-body {
+      transition: all 0.1s;
+
       time,
       p {
         color: $accentDark;
@@ -214,5 +217,10 @@
 
   .box-info {
     padding: rem(15px);
+
+    .description {
+        transition: all 0.1s;
+    }
+
   }
 }
