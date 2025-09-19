@@ -8,8 +8,12 @@
 
         <section class="post {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
             <article role="article" class="post-content">
-                {% if site.show_post_info %}
+
                 <p class="post-info">
+
+                    <a href="{{ site.url }}{{ site.baseurl }}">Go back to Home page</a>
+
+                    {% if site.show_post_info %}
                     {% if page.date %}
                         <svg class="icon-calendar" id="date"><use xlink:href="#icon-calendar"></use></svg>
                         <time class="date" datetime="{{ page.date | date_to_xmlschema }}">
@@ -18,8 +22,10 @@
                     {% endif %}
                     <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
                     <span>{{ minutesText }}</span>
+                    {% endif %}
                 </p>
-                {% endif %}
+
+
                 <h1 class="post-title">{{ page.title }}</h1>
                 <p class="post-subtitle">{{ page.subtitle }}</p>
 
